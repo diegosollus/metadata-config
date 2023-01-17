@@ -1,0 +1,36 @@
+metadata.add:
+  path: '/metadatas/create'
+  defaults:
+    _entity_form: metadata.add
+    _title: 'Add metadata'
+  requirements:
+    _entity_create_access: 'metadata'
+
+entity.metadata.edit_form:
+  path: '/metadatas/{metadata}/edit'
+  defaults:
+    _entity_form: metadata.edit
+    _title: 'Edit metadata'
+  requirements:
+    _entity_access: 'metadata.edit'
+
+entity.metadata.delete_form:
+  path: '/metadatas/{metadata}/delete'
+  defaults:
+    _entity_form: metadata.delete
+    _title: 'Delete metadata'
+  requirements:
+    _entity_access: 'metadata.delete'
+
+entity.metadata.canonical:
+  path: '/metadata/{metadata}'
+  defaults:
+    _entity_view: 'metadata'
+    _title: 'Metadata'
+  requirements:
+    _entity_access: 'metadata.view'
+
+entity.metadata.collection:
+  path: '/metadatas'
+  requirements:
+    _permission: 'administer own metadatas'

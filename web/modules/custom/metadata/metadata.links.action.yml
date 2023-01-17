@@ -1,0 +1,5 @@
+metadata.add_offer:
+  route_name: metadata.add
+  title: 'Add an metadata'
+  appears_on:
+    - entity.metadata.collection

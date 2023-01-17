@@ -1,0 +1,6 @@
+name: metadata
+type: module
+description: metadata entity
+core_version_requirement: ^9
+dependencies:
+  - drupal:views

@@ -1,0 +1,5 @@
+metadata.toolbar.my_metadatas:
+  title: 'My metadatas'
+  route_name: entity.metadata.collection
+  parent: system.admin
+  weight: 99
